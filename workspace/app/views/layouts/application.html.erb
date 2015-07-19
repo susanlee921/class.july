@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Workspace</title>
+  
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+ 
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href='https://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  
+  <div class = "nav dropdown">
+    <button id = "dLabel" type = "button" data-toggle = "dropdown" aria-haspopup = "true" aria-expanded = "false">
+      >
+      Dropdown trigger
+      <span class = "caret"></span>
+      
+      </button>
+      
+      <ul class ="dropdown-menu" aria-labelledby="dLabel">
+        <li><%= link_to('Contact', main_contact_path) %> </li>
+        <li><%= link_to('Home', root_path) %> </li> 
+        <li> <%=link_to('About', main_about_path) %> </li>
+        
+        
+      </ul>
+      </div>
+
+<%= yield %>
+
+  <div class="contact">
+    Contact Form
+  </div>
+  <div class="footer"></div>
+  Footer links 
+</body>
+</html>
+ 

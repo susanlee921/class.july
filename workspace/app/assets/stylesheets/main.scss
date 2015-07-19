@@ -1,0 +1,41 @@
+
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Crete Round', serif;
+}
+
+.hero {
+    height: 720px;
+    background-image: url("http://www.wallpapersdb.org/wallpapers/cats/big_gray_cat_1920x1200.jpg");
+    background-size: cover;
+    background-position: center;
+   
+    h1 {
+        color: grey;
+        font-size: 54px;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+.copy {
+    margin: 50px;
+    img {
+        width:100%;
+    }
+}
+
+
+.long-content { 
+    span { 
+        display: none;   
+    }
+    
+}
+
+.nav { 
+    position: absolute;
+    size: 10px;
+}
+
